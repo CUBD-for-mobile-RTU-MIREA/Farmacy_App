@@ -21,17 +21,17 @@ public class Repository implements IRepository{
 
     @Override
     public LiveData<Medicine> medicineById(int medicineId) {
-        return null;
+        return mock.medicineById(medicineId);
     }
 
 
     @Override
     public void addMedicine(Medicine newMedicine) {
-
+        mock.addMedicine(newMedicine);
     }
 
     @Override
     public void deleteMedicine(int medicineId) {
-
+        mock.deleteMedicine(medicineId);
     }
 }
